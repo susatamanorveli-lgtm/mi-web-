@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cocina con Amor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff914d, #ff4d4d);
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe0cc;
+        }
+
+        .hero {
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #ff4d4d;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #ff914d;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .contacto {
+            background: #ff914d;
+            color: white;
+            padding: 50px;
+        }
+
+        .contacto a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contacto a:hover {
+            background: #1ebe5d;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media(max-width:768px){
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍽️ Cocina con Amor</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h2>Deliciosas comidas hechas con amor ❤️</h2>
+</section>
+
+<section class="section" id="menu">
+    <h2>Nuestro Menú</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" alt="Pollo">
+            <h3>Pollo</h3>
+            <p>Pollo frito, asado, guisado y más.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b" alt="Mariscos">
+            <h3>Mariscos</h3>
+            <p>Camarones, pescado, ceviche y toda clase de comidas del mar.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462" alt="Carnes">
+            <h3>Carnes</h3>
+            <p>Carne asada, bistec, churrasco y más.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1543352634-8730c4c8a0c4" alt="Ensaladas">
+            <h3>Ensaladas</h3>
+            <p>Ensaladas frescas y saludables.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87" alt="Jugos Naturales">
+            <h3>Jugos Naturales</h3>
+            <p>Jugos 100% naturales y refrescantes.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c" alt="Arroz">
+            <h3>Arroz</h3>
+            <p>Arroz blanco, con pollo, arroz marinero y más.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+    <h2>Haz tu pedido ahora 📲</h2>
+    <p>Contáctanos por WhatsApp para ordenar tu comida favorita.</p>
+    <a href="https://wa.me/1234567890" target="_blank">Ordenar por WhatsApp</a>
+</section>
+
+<footer>
+    © 2026 Cocina con Amor | Todos los derechos reservados
+</footer>
+
+</body>
+</html>
